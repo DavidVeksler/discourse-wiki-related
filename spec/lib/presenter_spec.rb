@@ -53,8 +53,9 @@ RSpec.describe DiscourseWikiRelated::Presenter do
   end
 
   it "silently ignores a topic with no mapping row" do
-    expect(Rails.logger).not_to receive(:warn)
+    allow(Rails.logger).to receive(:warn)
     expect(card(nil)).to be_nil
+    expect(Rails.logger).not_to have_received(:warn)
   end
 
   it "rejects a row from the other site" do
