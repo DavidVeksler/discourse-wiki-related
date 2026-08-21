@@ -1,0 +1,16 @@
+plugins:
+  wiki_related_enabled:
+    default: false
+    client: false
+  wiki_related_wiki_base_url:
+    default: ""
+    client: false
+  wiki_related_heading:
+    default: "Related on the wiki"
+    client: false
+  wiki_related_max_links:
+    default: 3
+    min: 1
+    max: 3
+    client: false
+

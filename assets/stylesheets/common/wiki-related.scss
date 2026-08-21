@@ -1,0 +1,23 @@
+.wiki-related-card {
+  box-sizing: border-box;
+  margin: 2rem 0 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--primary-low-mid);
+  border-radius: var(--d-border-radius);
+  background: var(--primary-very-low);
+
+  h3 {
+    margin: 0 0 0.5rem;
+    font-size: var(--font-up-1);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.25rem;
+  }
+}
+

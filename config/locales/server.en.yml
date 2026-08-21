@@ -1,0 +1,7 @@
+en:
+  site_settings:
+    wiki_related_enabled: "Show validated related-wiki cards for mapped public topics."
+    wiki_related_wiki_base_url: "HTTPS wiki origin. Supported: wiki.objectivismonline.com or wiki.freecapitalists.org."
+    wiki_related_heading: "Heading displayed above related wiki links."
+    wiki_related_max_links: "Maximum links per card (1–3)."
+
