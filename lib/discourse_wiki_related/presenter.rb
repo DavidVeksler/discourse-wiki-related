@@ -20,6 +20,7 @@ module DiscourseWikiRelated
 
     def card
       return nil if !SiteSetting.wiki_related_enabled || !eligible_topic?
+      return nil if @stored_value.nil?
 
       base = validated_base_uri
       return nil if !base

@@ -52,6 +52,11 @@ RSpec.describe DiscourseWikiRelated::Presenter do
     expect(card).to be_nil
   end
 
+  it "silently ignores a topic with no mapping row" do
+    expect(Rails.logger).not_to receive(:warn)
+    expect(card(nil)).to be_nil
+  end
+
   it "rejects a row from the other site" do
     row[:site_key] = "mises-community"
     expect(card).to be_nil
