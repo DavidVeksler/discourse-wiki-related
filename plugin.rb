@@ -52,10 +52,7 @@ after_initialize do
     helpers = ApplicationController.helpers
     items =
       card[:links].map do |link|
-        helpers.content_tag(
-          :li,
-          helpers.link_to(link[:title], link[:url], rel: "noopener")
-        )
+        helpers.content_tag(:li, helpers.link_to(link[:title], link[:url]))
       end
     helpers.content_tag(
       :section,

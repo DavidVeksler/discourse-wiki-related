@@ -47,6 +47,7 @@ RSpec.describe "wiki-related topic rendering" do
     expect(fragment.css("a").map { |node| node["href"] }).to eq(
       browser_card["links"].map { |link| link["url"] }
     )
+    expect(fragment.css("a")).to all(satisfy { |node| node["rel"].nil? })
     expect(fragment.to_html).to include("First &lt;unsafe&gt;")
     expect(fragment.to_html).to include("Second &amp; final")
   end

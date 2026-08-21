@@ -10,10 +10,9 @@
       </h3>
       <ul>
         {{#each @outletArgs.model.wiki_related.links as |link|}}
-          <li><a href={{link.url}} rel="noopener">{{link.title}}</a></li>
+          <li><a href={{link.url}}>{{link.title}}</a></li>
         {{/each}}
       </ul>
     </section>
   {{/if}}
 </template>
-
