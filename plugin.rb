@@ -2,7 +2,7 @@
 
 # name: discourse-wiki-related
 # about: Shows validated related-wiki links on topic pages and crawler HTML.
-# version: 0.1.0
+# version: 0.2.0
 # authors: David Veksler
 # url: https://github.com/DavidVeksler/discourse-wiki-related
 # required_version: 3.3.0

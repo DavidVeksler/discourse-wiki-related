@@ -8,6 +8,10 @@ A minimal [Discourse](https://www.discourse.org/) plugin that renders precompute
 or matches content at render time — a validated `wiki_related` `TopicCustomField`, populated by an
 external job, supplies the ordered links. The plugin's only job is to present that data safely.
 
+In the browser, the links appear as a compact reference strip below the topic title and category,
+before the first post. The crawler view carries the same ordered links after the posts through
+Discourse's server-rendered HTML hook.
+
 ## Why
 
 Communities that run a companion MediaWiki alongside their Discourse forum want topic pages to

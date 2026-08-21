@@ -1,23 +1,48 @@
 .wiki-related-card {
   box-sizing: border-box;
-  margin: 2rem 0 1rem;
-  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin: 0.75rem 0 0;
+  padding: 0.65rem 0.875rem;
   border: 1px solid var(--primary-low-mid);
+  border-left: 0.25rem solid var(--tertiary);
   border-radius: var(--d-border-radius);
   background: var(--primary-very-low);
 
   h3 {
-    margin: 0 0 0.5rem;
-    font-size: var(--font-up-1);
+    flex: 0 0 auto;
+    margin: 0;
+    color: var(--primary-high);
+    font-size: var(--font-down-1);
+    font-weight: 700;
+    letter-spacing: 0.02em;
   }
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
     margin: 0;
-    padding-left: 1.25rem;
+    padding: 0;
+    list-style: none;
   }
 
   li + li {
-    margin-top: 0.25rem;
+    &::before {
+      margin-right: 0.75rem;
+      color: var(--primary-medium);
+      content: "\00b7";
+    }
+  }
+
+  a {
+    font-weight: 600;
+  }
+
+  @media screen and (width <= 40rem) {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
   }
 }
-
